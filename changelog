@@ -1,0 +1,60 @@
+#CHANGELOG
+## 29/12/2023:
+-Created the repo and made the initial files. -Mourad
+
+## 30/12/2023:
+-Added very simple home with one button. -Mourad
+-Added login page and the support page. -Mourad
+-Downloaded LARAVEL MIX but not used it. -Mourad
+
+## 31/12/2023:
+-Changed env database from laravel to fst -Mourad
+-Added images folder in public, changed home.blade.php and added home.css and home.js - Mourad
+-Remove support page and merged it with the login page -Mourad
+
+## 02/01/2024:
+-Removed stuff from the database and recreated it using migration, added timestamp to the table -Mourad
+-Made login connected with the database, still having issues redirecting it to the desired pages -Mourad
+
+## 03/01/2024:
+-Create all the dashboards and linked all the routes to the upgraded DashboardController -Mourad
+
+## 13/01/2024:
+-Added all the dashboards, one is fully working, needs back-end linkage now.
+-Added profile page, working for all dashboards when clicking the name(It should get its data from the database -Not done yet)
+
+## 21/01/2024:
+-CHanged all dashboards php files, added all the necessary tables for the dababase 
+-Changed the content of the tables and added new users
+-Changed Etudiant.css
+-Added all table models
+-Basic liaison between prof de module and a student studying a module now works!
+-Changed the name in the dashboard to be dyamic
+-Changed the profile to be entirely dynamic
+
+## 22/01/2024
+-Added working liaison between Responsable Filiere and Students (Annonces)
+-Added new Controller for home
+-Added new logo image
+-Added fully working announcements from Chef Departement to the invite
+-All announcements work perfectly now
+
+## 23/01/2024:
+-Added Demande table in the database
+-Added demande form for etudiant/delegue
+-Added StudentController and Demande model
+-Added link between Student/delegue and professeur/responsable_filiere
+-Added special delegue demande for delegue
+-Made all dashboards dymanic (NOt applicable for the chef_departemenet and responsable_pedagogique)
+-Gave professeur/responsable the ability to change the status of demande thus visibility (traite doesn't show)
+-Removed profile picture
+-Added new routes
+
+## 24/01/2024:
+-Added so that the Responsable Pedagogique can make reservations for the salles that don't have a departement
+-Added so that the chef departement can make reservations for the salles of his departement, only with professors that teach a module that's in a filiere that's in that same departement.
+-Removed the ability to make reservations for professors and Responsable Filiere.
+-Made the responsable pedagogique dashboard dynamic
+-Added formation/Departement/suppor and made the homepage better
+-Added new models, and updates HomeController/AuthController
+-Updated the database
